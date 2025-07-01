@@ -2,14 +2,6 @@ pipeline {
 
 	agent { label 'linux-slave' }
 
-	
-	tools {
-  maven 'm360'
-}
-	
-	parameters {
-  string defaultValue: 'adi', name: 'name', trim: true
-}
 	stages {
 	  stage('build') {
 		steps {

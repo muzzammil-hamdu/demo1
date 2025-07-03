@@ -1,6 +1,11 @@
 pipeline {
 
 	agent { label 'linux-slave' }
+	
+	
+	tools {
+  maven 'm360'
+}
 
 	stages {
 	  stage('build') {

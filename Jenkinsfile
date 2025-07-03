@@ -1,6 +1,6 @@
 pipeline {
 
-	agent { label 'linux-slave' }
+	agent { label 'wind-slave' }
 	
 	
 	tools {
